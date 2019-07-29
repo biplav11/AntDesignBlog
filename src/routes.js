@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Home from './views/Home'
-const BlogListing = () => <div>BlogListing</div>
+import BlogListing from './views/BlogsListing'
 const BlogDetail = () => <div>BlogDetail</div>
 
 export default [
