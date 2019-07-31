@@ -7,3 +7,10 @@ export const getAllBlogs = () => dispatch => {
         dispatch({type:'GET_BLOGS', payload: data.data})
     })
 }
+
+export const getBlogById = id => dispatch => {
+    return Axios.get(`/blogs/${id}`)
+    .then(data => {
+        dispatch({type: 'GET_BLOG_BY_ID', payload: data.data})
+    })
+}

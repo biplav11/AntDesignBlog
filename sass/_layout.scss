@@ -30,3 +30,15 @@ footer{
     text-align: center;
     line-height: 50px;
 }
+
+#detail{
+    max-width: 70%;
+    margin: 50px auto;
+    h1{
+        text-transform: capitalize;
+        font-size: 35px;
+    }
+    div{
+        margin-top: 50px;
+    }
+}

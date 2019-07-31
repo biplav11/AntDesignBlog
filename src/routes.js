@@ -1,15 +1,17 @@
-import React from 'react'
-
 import Home from './views/Home'
 import BlogListing from './views/BlogsListing'
-
-const Detail = props => <div>Detail {props.match.params.id}</div>
+import Detail from './views/Detail'
+import About from './views/About';
 
 export default [
     {
         path: '/',
         component: Home,
         exact: true
+    },
+    {
+        path: '/about',
+        component: About,
     },
     {
         path: '/blogs',

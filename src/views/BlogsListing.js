@@ -4,6 +4,7 @@ import { Row, Col, Card } from 'antd';
 import { getAllBlogs } from '../actions/blogAction';
 import {Link} from 'react-router-dom'
 import AppLayout from './layouts/AppLayout';
+import SkeletonList from './includes/SkeletonList';
 
 const { Meta } = Card;
 
@@ -21,11 +22,11 @@ const BlogsListing = props => {
     const handleBroken = (e) => {
         e.target.src ='http://lorempixel.com/640/480/city'
     }
+    if(checkEmpty(blogs)) return <SkeletonList/>
     return (
         <AppLayout>
             <div className="wrapper">
                 <Row gutter={30}>
-
                     {
                         blogs.map(item => {
                             let {id, title, thumbnail, desc} = item;

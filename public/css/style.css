@@ -28,6 +28,12 @@ body {
   margin-bottom: 30px !important;
 }
 
+.mart {
+  margin: 50px auto;
+  max-width: 60%;
+  margin-top: 0;
+}
+
 #intro .flex {
   height: 500px;
   flex-wrap: wrap;
@@ -124,6 +130,18 @@ footer {
   color: #fff;
   text-align: center;
   line-height: 50px;
+}
+
+#detail {
+  max-width: 70%;
+  margin: 50px auto;
+}
+#detail h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+}
+#detail div {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

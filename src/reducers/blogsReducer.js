@@ -1,5 +1,6 @@
 const initState = {
-    all: []
+    all: [],
+    single: {}
 }
 
 export default (state=initState, action) => {
@@ -9,6 +10,11 @@ export default (state=initState, action) => {
             return{
                 ...state,
                 all: payload
+            }
+        case 'GET_BLOG_BY_ID':
+            return{
+                ...state,
+                single: payload
             }
         default:
             return state;
