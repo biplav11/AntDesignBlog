@@ -15,7 +15,7 @@ body {
   justify-content: center;
 }
 
-main {
+.container {
   width: 90%;
   margin: auto;
 }
@@ -91,6 +91,39 @@ main {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+header .container {
+  justify-content: space-between;
+}
+header img {
+  width: 50px;
+}
+header span {
+  color: black;
+  font-size: 21px;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+header .top-links {
+  margin: 0;
+  padding: 0;
+}
+header .top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

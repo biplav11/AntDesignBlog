@@ -2,7 +2,8 @@ import React from 'react'
 
 import Home from './views/Home'
 import BlogListing from './views/BlogsListing'
-const BlogDetail = () => <div>BlogDetail</div>
+
+const Detail = props => <div>Detail {props.match.params.id}</div>
 
 export default [
     {
@@ -16,6 +17,6 @@ export default [
     },
     {
         path: '/blog/:id',
-        component: BlogDetail
+        component: Detail
     }
 ]
